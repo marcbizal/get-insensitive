@@ -1,11 +1,17 @@
 {
   "name": "get-insensitive",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Like `_.get`, but case insensitive.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcbizal/get-insensitive.git"
+  },
   "scripts": {
     "test": "ava && xo",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "author": "Marcus Bizal <hello@marcbizal.com>",
   "license": "MIT",
@@ -24,7 +30,8 @@
     "cz-conventional-changelog": "^2.1.0",
     "pre-commit": "^1.2.2",
     "semantic-release": "^15.9.16",
-    "xo": "^0.23.0"
+    "xo": "^0.23.0",
+    "travis-deploy-once": "^5.0.8"
   },
   "prettier": {
     "singleQuote": true,
