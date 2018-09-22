@@ -1,0 +1,52 @@
+{
+  "name": "get-insensitive",
+  "version": "1.0.0",
+  "description": "Like `_.get`, but case insensitive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava && xo",
+    "commit": "npx git-cz"
+  },
+  "author": "Marcus Bizal <hello@marcbizal.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.drop": "^4.1.1",
+    "lodash.head": "^4.0.1",
+    "lodash.isarray": "^4.0.0",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isnull": "^3.0.0",
+    "lodash.isstring": "^4.0.1",
+    "lodash.topairs": "^4.3.0"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-beta.8",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "pre-commit": "^1.2.2",
+    "semantic-release": "^15.9.16",
+    "xo": "^0.23.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "xo": {
+    "extends": [
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "npmPublish": true
+  }
+}
